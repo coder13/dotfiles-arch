@@ -1,0 +1,26 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        relative: true
+
+- clean: ['~']
+
+- create:
+    - ~/downloads
+    - ~/documents
+    - ~/git
+    - ~/projects
+    - ~/scrap
+
+- link:
+    ~/.dotfiles: ''
+    ~/.Xresources: Xresources
+    ~/.config/i3: i3
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.bashrc: bashrc
+    ~/.zshrc: zshrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
