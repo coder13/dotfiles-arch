@@ -1,5 +1,5 @@
 - defaults:
-    link:
+    link:   
         create: true
         relink: true
         relative: true
@@ -16,11 +16,15 @@
 - link:
     ~/.dotfiles: ''
     ~/.Xresources: Xresources
+    ~/.compton.conf: compton.conf
     ~/.config/i3: i3
+    ~/.config/i3status: i3status
+    ~/.config/polybar: polybar
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc
+    ~/.tmux.conf: tmux.conf
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
