@@ -67,7 +67,7 @@
 URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.loginShell:           true
-URxvt.internalBorder:       3
+URxvt.internalBorder:       0
 URxvt.lineSpace:            0
 
 ! transparency - true or false (default)
@@ -77,15 +77,16 @@ URxvt.lineSpace:            0
 !   some nice listings are at:
 !     http://www.nisrv.com/drupal/?q=node/11
 !     http://www.htmlgoodies.com/tutorials/colors/article.php/3478921
-!URxvt*tintColor: S_base03
+URxvt*tintColor: S_base03
 
 ! shading - 0 to 99 darkens, 101 to 200 lightens.
 !   Dont use with tintColor; just use a darker or lighter color instead.
-URxvt*shading: 95
+
+URxvt*depth: 32
 
 URxvt*saveLines: 12000
 
-URxvt*foreground: #657b83
+URxvt*foreground: base07
 URxvt*background: #002b36
 
 URxvt*font: xft:Hack:pixelsize=16

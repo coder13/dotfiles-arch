@@ -15,11 +15,14 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.bash: bash
+    ~/.bash_aliases: bash_aliases
     ~/.Xresources: Xresources
-    ~/.compton.conf: compton.conf
+    ~/.picom.conf: picom.conf
     ~/.config/i3: i3
     ~/.config/i3status: i3status
     ~/.config/polybar: polybar
+    ~/.config/rofi: rofi
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.bashrc: bashrc
