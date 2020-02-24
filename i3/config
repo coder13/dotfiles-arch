@@ -45,6 +45,8 @@ bindsym $mod+plus exec rofi -show calc -modi calc -no-show-match -no-sort-show c
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+bindsym $mod+Shift+Print exec "scrot ~/pictures/screenshots/%b%d::%H%M%S.png; notify-send 'sceenshot saved'"
+
 set $lock i3exit lock
 
 set $mode_system System: (l) lock, (e) logout, shift: (s)uspend, (h)ibernate, (r)eboot, (s)hutdown
@@ -153,26 +155,21 @@ bindsym $mod+g focus floating; mode "move"
 # Putting things places
 #
 
-for_window [window_role="About"]    floating enable
-for_window [title="Authy"]          floating enable
+for_window [window_role="About"]            floating enable
+for_window [title="Authy"]                  floating enable
 
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-    bindsym Up move up 24px
-    bindsym Left move left 24px
-    bindsym Down move down 24px
-    bindsym Right move right 24px
+    bindsym Left resize shrink width 24 px
+    bindsym Down resize grow height 24 px
+    bindsym Up resize shrink height 24 px
+    bindsym Right resize grow width 24 px
 
-    bindsym ctrl+Left resize shrink width 24 px
-    bindsym ctrl+Down resize grow height 24 px
-    bindsym ctrl+Up resize shrink height 24 px
-    bindsym ctrl+Right resize grow width 24 px
-
-    bindsym shift+Left resize shrink width 4 px
-    bindsym shift+Down resize grow height 4 px
-    bindsym shift+Up resize shrink height 4 px
-    bindsym shift+Right resize grow width 4 px
+    bindsym ctrl+Left resize shrink width 4 px
+    bindsym ctrl+Down resize grow height 4 px
+    bindsym ctrl+Up resize shrink height 4 px
+    bindsym ctrl+Right resize grow width 4 px
 
     # back to normal: Enter or Escape or $mod+r
     bindsym Return mode "default"
@@ -216,7 +213,7 @@ bar {
 
     colors {
         background $background
-        statusline $foreground
+        statusline #ffffff
     }
 }
 

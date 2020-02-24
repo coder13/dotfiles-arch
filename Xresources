@@ -1,64 +1,4 @@
-#define base00 #073642
-#define base01 #dc322f
-#define base02 #859900
-#define base03 #b58900
-#define base04 #268bd2
-#define base05 #d33682
-#define base06 #2aa198
-#define base07 #eee8d5
-#define base08 #002b36
-#define base09 #cb4b16
-#define base0A #586e75
-#define base0B #657b83
-#define base0C #839496
-#define base0D #6c71c4
-#define base0E #93a1a1
-#define base0F #fdf6e3
-
-!################################
-! Color settings (Solarized dark)
-!#################################
-
-*background: base08
-*foreground: base0B
-!!*fading: 40
-*fadeColor: base08
-*cursorColor: base0E
-*pointerColorBackground: base0A
-*pointerColorForeground: base0E
-
-!! black dark/light
-*color0: base00
-*color8: base08
-
-!! red dark/light
-*color1: base01
-*color9: base09
-
-!! green dark/light
-*color2: base02
-*color10: base0A
-
-!! yellow dark/light
-*color3: base03
-*color11: base0B
-
-!! blue dark/light
-*color4: base04
-*color12: base0C
-
-!! magenta dark/light
-*color5: base05
-*color13: base0D
-
-!! cyan dark/light
-*color6: base06
-*color14: base0E
-
-!! white dark/light
-*color7: base07
-*color15: base0F
-
+#include "base16-solarized-dark.Xresources"
 
 !###############
 ! URXVT settings
@@ -86,10 +26,10 @@ URxvt*depth: 32
 
 URxvt*saveLines: 12000
 
-URxvt*foreground: base07
-URxvt*background: #002b36
+// URxvt*background: base00
+// URxvt*foreground: base08
 
-URxvt*font: xft:Hack:pixelsize=16
+URxvt*font: xft:Hack:pixelsize=16z
 URxvt*boldFont: xft:Hack:bold:pixelsize=16
 
 ! scrollbar - true (default) or false

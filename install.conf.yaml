@@ -23,6 +23,7 @@
     ~/.config/i3status: i3status
     ~/.config/polybar: polybar
     ~/.config/rofi: rofi
+    ~/.config/dunst: dunst
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.bashrc: bashrc

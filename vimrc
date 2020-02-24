@@ -26,7 +26,8 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'colors'
 
 call vundle#end()
-colorscheme solarized8_dark_flat
+set background=dark
+colorscheme default
 filetype plugin indent on
 
 """"""""
