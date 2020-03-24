@@ -45,7 +45,7 @@ fi
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 
 # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-PS1='${debian_chroot:+($debian_chroot)}\e[0;33m\u@\h\e[m:\e[0;34m\w\e[0;37m$ '
+PS1='\[${debian_chroot:+($debian_chroot)}\e[0;33m\u@\h\e[m:\e[0;34m\w\e[0;37m$\] '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -77,3 +77,5 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias outlook='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn'

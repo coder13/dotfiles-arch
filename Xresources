@@ -26,11 +26,13 @@ URxvt*depth: 32
 
 URxvt*saveLines: 12000
 
-// URxvt*background: base00
-// URxvt*foreground: base08
+! URxvt*background: base00
+! URxvt*foreground: base08
 
 URxvt*font: xft:Hack:pixelsize=16z
 URxvt*boldFont: xft:Hack:bold:pixelsize=16
+!URxvt.font:xft:Monospace:pixelsize=14
+!URxvt.boldfont:xft:Monospace-Bold:pixelsize=14
 
 ! scrollbar - true (default) or false
 URxvt*scrollBar: false
